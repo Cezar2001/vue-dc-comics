@@ -3,7 +3,9 @@
     <header-box />
     <jumbo-main />
     <main-cards />
-    <!-- <footer-app /> -->
+    <footer-nav />
+    <footer-app />
+    <footer-sign-up />
   </div>
 </template>
 
@@ -11,7 +13,9 @@
 import HeaderBox from './components/HeaderBox.vue'
 import JumboMain from './components/JumboMain.vue'
 import MainCards from './components/MainCards.vue'
-// import FooterApp from './components/FooterApp.vue'
+import FooterNav from './components/FooterNav.vue'
+import FooterApp from './components/FooterApp.vue'
+import FooterSignUp from './components/FooterSignUp.vue'
 
 export default {
   name: 'App',
@@ -19,7 +23,9 @@ export default {
     HeaderBox,
     JumboMain,
     MainCards,
-    // FooterApp
+    FooterNav,
+    FooterApp,
+    FooterSignUp
   }
 }
 </script>
