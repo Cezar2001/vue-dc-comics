@@ -31,5 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './style/main.scss'
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './style/main.scss';
 </style>
