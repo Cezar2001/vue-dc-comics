@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header-box />
+    <header-box :nav="nav"/>
     <jumbo-main />
     <main-cards />
     <footer-nav />
@@ -26,6 +26,62 @@ export default {
     FooterNav,
     FooterApp,
     FooterSignUp
+  },
+  data() {
+    return {
+      nav: [
+        {
+        id: '1',
+        label: 'CHARACTERS',
+        url: '/CHARACTERS'
+        },
+        {
+          id: '2',
+          label: 'COMICS',
+          url: '/COMICS'
+        },
+        {
+          id: '3',
+          label: 'MOVIES',
+          url: '/MOVIES'
+        },
+        {
+          id: '4',
+          label: 'TV',
+          url: '/TV'
+        },
+        {
+          id: '5',
+          label: 'GAMES',
+          url: '/GAMES'
+        },
+        {
+          id: '6',
+          label: 'COLLECTIBLES',
+          url: '/COLLECTIBLES'
+        },
+        {
+          id: '7',
+          label: 'VIDEOS',
+          url: '/VIDEOS'
+        },
+        {
+          id: '8',
+          label: 'FANS',
+          url: '/FANS'
+        },
+        {
+          id: '9',
+          label: 'NEWS',
+          url: '/NEWS'
+        },
+        {
+          id: '10',
+          label: 'SHOP',
+          url: '/SHOP'
+        },
+      ]
+    }
   }
 }
 </script>

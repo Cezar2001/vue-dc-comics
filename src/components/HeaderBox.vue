@@ -5,16 +5,11 @@
         </div>
         <nav>
             <ul>
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <li v-for="link in nav" :key="link.id">
+                    <a :href="link.url">
+                        {{link.label}}
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -22,7 +17,9 @@
 
 <script>
 export default {
-    
+    props: {
+        nav: Array
+    } 
 }
 </script>
 
@@ -51,8 +48,12 @@ header {
                 cursor: pointer;
 
                 &:hover {
-                    color: $text-blu-color;
-                    border-bottom: 5px $text-blu-color solid;
+                    border-bottom: 5px $background-blu solid;
+                }
+
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
                 }
             }
         }

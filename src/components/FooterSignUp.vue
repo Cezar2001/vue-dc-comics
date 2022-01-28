@@ -47,7 +47,7 @@ div {
     outline: none;
     text-decoration: none;
     padding: 10px 20px;
-    border: 2px #007fff solid;
+    border: 3px $background-blu solid;
     color: $text-white-color;
     background-color: $background-grey;
     font-weight: bold;
